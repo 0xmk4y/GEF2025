@@ -46,7 +46,7 @@
 <body class="bg-gray-50">
   <!-- Header -->
   <header class="bg-white shadow-md top-0 z-50">
-    <div class="bg-green-600 hidden">
+    <div class="bg-orange-600 hidden">
       <div
         class="flex flex-col md:flex-row gap-3 justify-between items-center text-white px-4 py-2 text-sm container mx-auto max-w-7xl">
         <div class="flex flex-col md:flex-row items-center md:gap-6 py-2">
@@ -91,7 +91,7 @@
   </header>
 
   <!-- Booking Summary Bar -->
-  <div class="bg-green-600 text-white py-4">
+  <div class="bg-orange-600 text-white py-4">
     <div class="container mx-auto px-4 lg:px-8">
       <div class="flex flex-wrap items-center justify-center gap-4 text-sm md:text-base">
         <div><span class="font-semibold">Hotel:</span> <span id="summary-hotel">--</span></div>
@@ -109,20 +109,20 @@
     <div class="container mx-auto px-4 lg:px-8">
       <div class="max-w-7xl mx-auto">
         <!-- Progress Bar -->
-        <div class="mb-12">
+        <!-- <div class="mb-12">
           <div class="flex items-center justify-between max-w-2xl mx-auto">
             <div class="flex flex-col items-center">
               <div
-                class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
+                class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
                 ✓</div>
-              <p class="text-xs mt-2 font-semibold text-green-600">Dates</p>
+              <p class="text-xs mt-2 font-semibold text-orange-600">Dates</p>
             </div>
-            <div class="flex-1 h-1 bg-green-500 mx-2"></div>
+            <div class="flex-1 h-1 bg-orange-500 mx-2"></div>
             <div class="flex flex-col items-center">
               <div
-                class="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
+                class="w-12 h-12 rounded-full bg-orange-500 text-white flex items-center justify-center font-bold text-lg shadow-lg">
                 ✓</div>
-              <p class="text-xs mt-2 font-semibold text-green-600">Hotels</p>
+              <p class="text-xs mt-2 font-semibold text-orange-600">Hotels</p>
             </div>
             <div class="flex-1 h-1 bg-orange-600 mx-2"></div>
             <div class="flex flex-col items-center">
@@ -139,7 +139,7 @@
               <p class="text-xs mt-2 text-gray-500">Confirm</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="text-center mb-12">
           <div class="inline-block bg-orange-100 text-orange-700 px-6 py-2 rounded-full font-semibold mb-4">
@@ -163,7 +163,7 @@
           </div>
           <div class="border-t pt-4 flex justify-between items-center">
             <span class="text-xl font-bold text-gray-800">Add-ons Total:</span>
-            <span class="text-3xl font-bold text-green-600" id="addons-total">$0</span>
+            <span class="text-3xl font-bold text-orange-600" id="addons-total">$0</span>
           </div>
         </div>
 
@@ -183,7 +183,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-green-600 text-white py-12">
+  <footer class="bg-orange-600 text-white py-12">
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
@@ -365,7 +365,7 @@
         selectedAddons.splice(index, 1);
         card.classList.remove('addon-selected');
         btn.textContent = 'Add';
-        btn.classList.remove('bg-green-600', 'hover:bg-green-700');
+        btn.classList.remove('bg-orange-600', 'hover:bg-orange-700');
         btn.classList.add('bg-orange-600', 'hover:bg-orange-700');
       } else {
         // Add
@@ -373,7 +373,7 @@
         card.classList.add('addon-selected');
         btn.textContent = '✓ Added';
         btn.classList.remove('bg-orange-600', 'hover:bg-orange-700');
-        btn.classList.add('bg-green-600', 'hover:bg-green-700');
+        btn.classList.add('bg-orange-600', 'hover:bg-orange-700');
       }
 
       updateSelectedSummary();
